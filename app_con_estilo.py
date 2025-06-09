@@ -44,7 +44,7 @@ def agregar_logo_lateral(imagen_url):
         """,
         unsafe_allow_html=True
     )
-agregar_logo_lateral("logo.jpg")  # o usa el PNG que subiste
+agregar_logo_lateral("https://imgur.com/a/fVlzXx2")  # o usa el PNG que subiste
 
 # --- TÍTULO ---
 st.title("🏋️‍♂️ App de Ejercicios con Videos")
