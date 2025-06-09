@@ -54,12 +54,12 @@ def agregar_logo_derecho(imagen_url):
         .stApp::after {{
             content: "";
             background: url("{imagen_url}") no-repeat;
-            background-size: 300px;
+            background-size: 500px;
             position: fixed;
             top: 40px;
             right: 20px;
-            width: 300px;
-            height: 300px;
+            width: 500px;
+            height: 500px;
             z-index: 1;
         }}
         </style>
