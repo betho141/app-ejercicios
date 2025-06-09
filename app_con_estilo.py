@@ -8,25 +8,25 @@ from openpyxl import load_workbook
 st.set_page_config(page_title="App de Ejercicios", layout="centered")
 
 # --- LOGO ---
-st.image("https://i.imgur.com/N2ZpK7M.png", width=180)
+st.image("logo.jpg", width=180)
 
 # --- FONDO PERSONALIZADO ---
-def agregar_fondo(imagen_url):
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("{imagen_url}");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+# def agregar_fondo(imagen_url):
+#     st.markdown(
+#         f"""
+#         <style>
+#         .stApp {{
+#             background-image: url("{imagen_url}");
+#             background-size: cover;
+#             background-repeat: no-repeat;
+#             background-position: center;
+#         }}
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-agregar_fondo("https://i.imgur.com/4HJbzEq.jpeg")
+# agregar_fondo("https://i.imgur.com/4HJbzEq.jpeg")
 
 # --- TÍTULO ---
 st.title("🏋️‍♂️ App de Ejercicios con Videos")
