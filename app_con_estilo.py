@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 st.set_page_config(page_title="App de Ejercicios", layout="centered")
 
 # --- LOGO ---
-st.image("logo.jpg", width=180)
+# st.image("logo.jpg", width=180)
 
 # --- FONDO PERSONALIZADO ---
 # def agregar_fondo(imagen_url):
@@ -27,6 +27,24 @@ st.image("logo.jpg", width=180)
 #     )
 
 # agregar_fondo("https://i.imgur.com/4HJbzEq.jpeg")
+
+def agregar_logo_lateral(imagen_url):
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("{imagen_url}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 220px;
+            background-position: top left;
+            padding-left: 240px;  /* desplaza el contenido a la derecha */
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+agregar_logo_lateral("logo.jpg")  # o usa el PNG que subiste
 
 # --- TÍTULO ---
 st.title("🏋️‍♂️ App de Ejercicios con Videos")
