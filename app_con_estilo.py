@@ -56,8 +56,8 @@ def agregar_logo_derecho(imagen_url):
             background: url("{imagen_url}") no-repeat;
             background-size: 400px;
             position: fixed;
-            top: 100px;
-            right: 40px;
+            top: 40px;
+            right: 20px;
             width: 400px;
             height: 400px;
             z-index: 1;
