@@ -47,6 +47,29 @@ def agregar_logo_lateral(imagen_url):
 ruta_logo = "https://i.imgur.com/aaYPdao.jpeg"
 agregar_logo_lateral(ruta_logo)  # o usa el PNG que subiste
 
+def agregar_logo_derecho(imagen_url):
+    st.markdown(
+        f"""
+        <style>
+        .stApp::after {{
+            content: "";
+            background: url("{imagen_url}") no-repeat;
+            background-size: 300px;
+            position: fixed;
+            top: 40px;
+            right: 20px;
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+ruta_imagen_humberto = "https://i.imgur.com/nvYsnV2.jpeg"
+agregar_logo_derecho(ruta_imagen_humberto)
+
+
 # --- TÍTULO ---
 st.title("🏋️‍♂️ App de Ejercicios con Videos")
 
