@@ -36,9 +36,9 @@ def agregar_logo_lateral(imagen_url):
             background-image: url("{imagen_url}");
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: 220px;
-            background-position: top left;
-            padding-left: 240px;  /* desplaza el contenido a la derecha */
+            background-size: 400px;
+            background-position: 20px 40px;
+            padding-left: 420px;  /* desplaza el contenido a la derecha */
         }}
         </style>
         """,
