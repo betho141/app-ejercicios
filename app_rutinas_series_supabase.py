@@ -8,11 +8,11 @@ from openpyxl import load_workbook
 # --- CONFIGURACIÓN DE CONEXIÓN A SUPABASE ---
 def get_connection():
     return psycopg2.connect(
-        host="db.nwjuqqfsquvytbwslqrw.supabase.co",
+        host="aws-0-us-east-2.pooler.supabase.com",
         dbname="postgres",
-        user="postgres",
+        user="postgres.nwjuqqfsquvytbwslqrw",
         password="Dibujolavida141",
-        port=5432
+        port=6543
     )
 
 # --- CONFIGURACION DE LA APP ---
