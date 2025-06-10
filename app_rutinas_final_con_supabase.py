@@ -55,8 +55,9 @@ if modo == "Usuario":
             for _, row in df_final.iterrows():
                 st.markdown(f"**{row['nombre']}**")
                 st.markdown(f"Repeticiones: {row['repeticiones']} | Series: {row['series']}")
-                if st.button(f"Ver Video de {row['nombre']}", key=row['id']):
-                    webbrowser.open_new_tab(row['url'])
+                st.markdown(f"[🔗 Ver video de {row['nombre']}]({row['url']})", unsafe_allow_html=True)
+                # if st.button(f"Ver Video de {row['nombre']}", key=row['id']):
+                #    webbrowser.open_new_tab(row['url'])
         else:
             st.warning("No se encontraron ejercicios asignados.")
 
